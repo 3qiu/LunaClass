@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:20;
+}
+/* style of the header comment*/
+
+  .header{
+    background-color:#E97451;
+    padding: 10px;
+    text-aligh: center;
+    float: center;
+
+  }
+
+  .topnav{background-color: #E5AA70;
+  overflow: hidden;
+/*a style of the nav bar*/
+  }
+  .topnav a{
+    color: white;
+    float: center;
+    display: block;
+    text-align: center;
+    padding: 10px 13px;
+  }
+
+  /*style of change color on hover*/
+
+.topnav a:hover{
+  background-color: #F0E68C;
+  color: whitesmoke;
+}
+
+/*create 3 equal columna that float next to each other*/
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+
+}

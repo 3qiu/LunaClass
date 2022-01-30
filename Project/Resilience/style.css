@@ -1,0 +1,43 @@
+
+
+body { 
+  background: lightblue url("home.jpeg") no-repeat fixed center; background-size: 100%;
+  margin:10px;
+
+}
+
+.header { 
+  color: white;
+  letter-spacing: 5px;
+
+}
+
+
+.topnav{
+  overflow: hidden;
+}
+/*Style the links inside the navigation bar */
+.topnav a{
+  color: #ddd;
+ float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+/*Changes the color on hover to grey when clicking links on header*/
+.topnav a:hover{
+ background-color: #f1f1f1;
+ color: black;
+ text-decoration:none;
+}
+
+h3{
+  background-color: whitesmoke
+   color: white;
+}
+strong {
+  background-color: 
+  color: white;
+}
+
+  

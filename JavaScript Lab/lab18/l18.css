@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+/*id>class>element */
+body{
+  
+  
+}
+/* style of the header comment*/
+div iframe{
+  padding: 10px;
+  width: 90%;
+  height:80%;
+  display: flex;
+  aligh-item: center;
+  justify-items: center;
+  border: 
+  margin: auto;
+  
+}
+
+  .header{
+    background-color:rgb(135, 230, 46);
+    padding: 20px;
+    text-aligh: center;
+
+  }
+
+/*a style of the nav bar*/
+  .topnav{
+    background-color: blanchedalmond;
+  overflow: hidden;
+  }
+  
+  .topnav a{
+    color: blueviolet;
+    float: left;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: larger;
+  }
+
+  /*style of change color on hover*/
+
+.topnav a:hover{
+  background-color: grey;
+  color: whitesmoke;
+}
+
+/*create 3 equal columna that float next to each other*/
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+
+}
+
+form {
+  border: double 2px green;
+  width: fit-content;
+  height: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size:large;
+
+}
+
+form input, {
+  float: right;
+  width: 60%;
+  height: 25%;
+  padding: 1px;
+
+}
+
+button {
+  background-color: black;
+  color: whitesmoke;
+  font-size: 30px;
+  
+}

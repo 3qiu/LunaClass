@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Birthstones & Zodiac Signs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  video{
+    width: 1200px;
+    top:0;
+    height: 530px;
+  }
+</style>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style1.css">
+
+
+
+</head>
+
+
+
+<body>
+<!---
+<div class="content-wrapper">
+		<!img src="img/naps-logo@2x.png" class="logo" alt="NAPS Logo">
+ 
+    <nav>
+			<ul>
+				<li><a href="#">January - Garnet</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>  
+
+  
+	</div>
+</header>
+
+  --->
+
+<div class="hero">
+  <video autoplay muted loop id="myVideo">
+  <source src="nebula.mp4" type="video/mp4">
+  </video>
+  <br>
+  <br>
+	<h1>Birthstones & Zodiac Signs</h1>
+  <br>
+	<p> What are birthstones and what are their corresponding zodiac signs?</p>
+</div>
+
+<main role="main">
+	<div class="content-wrapper">
+		<p id="press-quote">Birthstones carry secrets, attributes and lore that are unique to each gemstone. — Gemological Institute of America</p>
+		<p>A birthstone is a gemstone that represents the month or zodiac sign of when an individual was born. Historically, it is believed there that the twelve different stones originated from the Book of Exodus. High priests wore breastplates with the different stones implanted. In 1912, the official list was created by the Jewelers of America. Below find some quick facts about your birthstone and the zodiac sign that matches your birth month. <!-- <a href="#">contact&nbsp;us</a>.</p> -->
+		<!--<p>NAPS began in 1938 when our founder, William Dozer, was fired from his job for taking a siesta during work hours at a Baltimore factory. William realized that siestas are a fundamental human right, so he organized a strike at the factory. The strike was a success and led to a company-wide policy which allowed three siestas per day. After the successful strike, William Dozer started NAPS with the goal of implementing similar policies across the United States. Today NAPS operates out of Washington, D.C. with local chapters in all 50 states, advocating for free sleep in all spheres of life.</p>
+    --->
+	</div>
+</main>
+
+<!--Vincent section-->
+<div class="outer-wrapper">
+	<header class="clearfix">
+		<h1>Birth Stone Facts</h1>
+		<select id="state-list">
+			<option value="Month">Choose a Month</option>
+			<option value="Jan">January</option>
+			<option value="Feb">Febrary</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="Aug">August</option>
+			<option value="Sept">September</option>
+			<option value="Oct">October</option>
+			<option value="Nov">November</option>
+			<option value="Dec">December</option>
+		</select>
+	</header>
+	<div class="main clearfix">
+		<div class="img-holder">
+			<div>
+				<img id="info-pic" src="birthstone1.jpg" alt="Birthstone" width="260" height="230">
+				<p id="info-name">Birthstone</p>
+			</div>
+		</div>
+		<div class="info-holder">
+			<p><strong>Color:</strong><span id="info-abbreviation"> Lucky Color </span></p>
+			<p><strong>Originate:</strong><span id="info-capitol"> Location </span></p>
+			<p><strong>Zodiac:</strong><span id="info-population"> Star Sign</span></p>
+			<p><strong>Represents:</strong><span id="info-statehood"> Meaning</span></p>
+		</div>
+	</div>
+</div>
+
+<!--- Qiuyi Postcard --->
+<div class="outer-wrapper">
+	<div class="content-wrapper">
+		<header>
+			<h1>Postcard Generator</h1>
+			<p class="subtitle">Customize Your Own Birthstone Star Sign Card</p>
+		</header>
+		<main role="main">
+      <!--<div class="img-holder">
+				<img id="info-pic" src="zodiac.jpg" alt="Birthstone" width="260" height="230">
+				<p id="info-name">Star and You</p>
+		</div> -->
+			<div class="first step">
+      
+				<h2>1. Which month were you born?</h2>
+				<select name="states" id="states">
+          
+					<option selected disabled value="empty-state">Choose a month</option>
+          <!-- <option value="usa">Choose a Month</option> -->
+
+          <option value="Jan">January</option>
+          <option value="Feb">Febrary</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="Aug">August</option>
+          <option value="Sept">September</option>
+          <option value="Oct">October</option>
+          <option value="Nov">November</option>
+          <option value="Dec">December</option>
+        
+				</select>
+			</div>
+			<div class="second step">
+				<h2>2. Here is Your Star Card!</h2>
+				<div id="postcard">
+					<p id="greeting"> To get your card, choose your birth month first!</p>
+					<p id="state-heading"> </p>
+				</div>
+
+			</div>
+		</main>
+	</div>
+</div>
+<script src="js/state-data1.js"></script>
+
+<!-- state info section -->
+
+<script>
+	document.getElementById('state-list').onchange = function() {
+		var selected = this.value;
+		document.getElementById('info-pic').src= 'img1/'+selected+'.jpg';
+		document.getElementById('info-name').textContent = stateData[this.value].name;
+		document.getElementById('info-abbreviation').textContent = stateData[this.value].abbr;
+		document.getElementById('info-capitol').textContent = stateData[this.value].capitol;
+		document.getElementById('info-population').textContent = stateData[this.value].pop;
+    document.getElementById('info-statehood').textContent = stateData[this.value].statehood;
+  
+	};
+</script>
+
+
+<script>
+	var quotesArray = [
+		'Birthstones are a popular international trend rooted in centuries worth of tradition. — itv Media',
+		'Birthstones carry secrets, attributes and lore that are unique to each gemstone. — Gemological Institute of America',
+		'It turns out that birthstones are both an American invention and an ancient tradition. — Atlas Obscura',
+	];
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+</script>
+
+<footer>
+	<p>Made in NY <br>Copyright © C5 birthstone project</p>
+</footer>
+
+<script>
+	var states = document.getElementById('states');
+
+	states.onchange = function() {
+		//console.log('state index: ' + states.selectedIndex);
+		//console.log('state name: ' + states.options[states.selectedIndex].text);
+		//console.log('img/' + states.value + '@2x.jpg');
+		document.getElementById('postcard').style.backgroundImage = 'url(img/' + states.value + '@2x.jpg)';
+		document.getElementById('greeting').innerHTML = ' ';
+		// document.getElementById('state-heading').innerHTML = states.options[states.selectedIndex].text;
+	}
+</script>
+
+</body>
+</html>

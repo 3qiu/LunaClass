@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:20;
+}
+/* style of the header comment*/
+
+  .header{
+    background-color:#40E0D0;
+    padding: 10px;
+    text-align: center;
+    float: center;
+
+  }
+
+  .topnav{background-color:rgb(240, 185, 140);
+  overflow: hidden;
+/*a style of the nav bar*/
+  }
+  .topnav a{
+    color:rgb(0, 0, 0);
+    float: center;
+    display: block;
+    text-align: center;
+    padding: 10px 13px;
+  }
+
+  /*style of change color on hover*/
+
+.topnav a:hover{
+  background-color: rgb(77, 134, 240);
+  color: rgb(242, 245, 89);
+}
+
+/*create 3 equal columna that float next to each other*/
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+
+}
